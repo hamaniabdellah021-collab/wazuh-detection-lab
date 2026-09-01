@@ -1,0 +1,92 @@
+{
+  "_index": "wazuh-alerts-4.x-2026.09.01",
+  "_id": "PvTWW6ABEvZTqbUdD5Vn",
+  "_score": null,
+  "_source": {
+    "input": {
+      "type": "log"
+    },
+    "agent": {
+      "ip": "192.168.100.52",
+      "name": "windows-pc",
+      "id": "002"
+    },
+    "manager": {
+      "name": "azer-VirtualBox"
+    },
+    "data": {
+      "win": {
+        "eventdata": {
+          "param3": "demand start",
+          "param4": "BITS",
+          "param1": "Background Intelligent Transfer Service",
+          "param2": "auto start"
+        },
+        "system": {
+          "eventID": "7040",
+          "eventSourceName": "Service Control Manager",
+          "keywords": "0x8080000000000000",
+          "providerGuid": "{555908d1-a6d7-4695-8e1e-26931d2012f4}",
+          "level": "4",
+          "channel": "System",
+          "opcode": "0",
+          "message": "\"The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.\"",
+          "version": "0",
+          "systemTime": "2026-09-01T07:19:06.9427006Z",
+          "eventRecordID": "3738",
+          "threadID": "3700",
+          "computer": "windows-11",
+          "task": "0",
+          "processID": "916",
+          "severityValue": "INFORMATION",
+          "providerName": "Service Control Manager"
+        }
+      }
+    },
+    "rule": {
+      "firedtimes": 2,
+      "mail": false,
+      "level": 3,
+      "pci_dss": [
+        "10.6"
+      ],
+      "hipaa": [
+        "164.312.b"
+      ],
+      "tsc": [
+        "CC6.1",
+        "CC6.8",
+        "CC7.2",
+        "CC7.3"
+      ],
+      "description": "Service startup type was changed",
+      "groups": [
+        "windows",
+        "windows_system",
+        "policy_changed"
+      ],
+      "id": "61104",
+      "nist_800_53": [
+        "AU.6"
+      ],
+      "info": "This does not appear to be logged on Windows 2000",
+      "gdpr": [
+        "IV_35.7.d"
+      ]
+    },
+    "location": "EventChannel",
+    "decoder": {
+      "name": "windows_eventchannel"
+    },
+    "id": "1788247147.364907",
+    "timestamp": "2026-09-01T08:19:07.636+0100"
+  },
+  "fields": {
+    "timestamp": [
+      "2026-09-01T07:19:07.636Z"
+    ]
+  },
+  "sort": [
+    1788247147636
+  ]
+}

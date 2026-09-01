@@ -1,2 +1,2 @@
 # wazuh-detection-lab
-This repository simulates MITRE ATT&amp;CK Technique T1133 (External Remote Services) using Atomic Red Team. Specifically, it tests how adversaries gain initial access or maintain persistence by force-installing unauthorized Chrome VPN extensions via modifications to the Windows Registry.
+Atomic Red Team emulation for MITRE ATT&CK T1133 (External Remote Services). Contains PowerShell scripts to simulate and clean up registry-based force installation of unauthorized Chrome VPN extensions on Windows, designed for testing SIEM and EDR detection rules.

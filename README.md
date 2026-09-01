@@ -3,7 +3,7 @@ Atomic Red Team emulation for MITRE ATT&CK T1133 (External Remote Services). Con
 
 
 
-#### Alert 1 
+# Alert 1 
 
 ### Step 1 (Persistence & Impact)
 
@@ -21,7 +21,7 @@ As a result, **Windows Security Event ID 4625** was logged with **SubStatus `0xc
 
 
 
-#### Alert 2
+# Alert 2
 
 
 
